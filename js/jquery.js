@@ -1,1 +1,0 @@
-$(document).ready(function(){    $('.header, .footer').hide().slideDown(1000);	//$('.bodySection').hide().slideDown(400);});// Drop down fade In$('#cssmenu').addClass('headline');$('#cssmenu').hide().fadeIn(500);;/*$(document).ready(function() {     $(".contact form").hide();});$("#contactToggle").click(function() {    $(".contact form").toggle();});*/
