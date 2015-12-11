@@ -17,6 +17,8 @@ hr {
     display: block;
     height: 1px;
     margin-bottom: 10px;
+	    margin-left: auto;
+	margin-right: auto;
 }
 /*Link Color Config*/
 
@@ -93,8 +95,8 @@ a:active {
     color: #000;
 }
 #cssmenu {
-	margin-top: 20%;
-	position: fixed;
+	left: 27%;
+	position: relative;
     font-family: 'Lato', sans-serif;
     width: auto;
     -webkit-border-radius: 3px;
@@ -162,6 +164,7 @@ a:active {
     border-color: #4857a0;
 }
 #cssmenu ul ul {
+	text-align:center;
     margin: 0 10px;
     padding: 0 10px;
     float: none;
@@ -180,10 +183,9 @@ a:active {
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 #cssmenu ul > li > ul > li {
-    margin: 0 10px 0 0;
+    margin-left:auto;
     position: relative;
     padding: 0;
-    float: left;
 }
 #cssmenu ul > li > ul > li > a {
     padding: 10px 10px 10px 10px;
@@ -207,15 +209,32 @@ a:active {
     padding-top: 30px;
     margin-left: 30px;
 }
+.headerImage {
+	margin-left:10%;
+}
+.headerImage img{
+	margin-top: 2%;
+	position: fixed;
+	height:185px;
+	width: 80%;
+    border-style: solid;
+    border-width: 5px;
+	padding:5px;
+	border-radius:15%;
+	border-color: #4857a0;
+	background-color: #5c6aab;
+}
 /*Body Section Config*/
 
 .bodySection {
+	text-align: center;
     width: 40%;
     height: 100%;
     background-color: #FFF;
-    margin-top: 10%;
+    margin-top: 21%;
     margin-bottom: 5%;
-    /*margin-left: 10%;*/
+    margin-left: auto;
+	margin-right: auto;
     
     padding-top: 2%;
     padding-right: 5%;
@@ -236,7 +255,7 @@ a:active {
 }
 /*Contact form config*/
 #contactToggle {
-    align: center;
+    /*align: center;*/
 }
 .contactButton {
     margin-bottom: 5px;
