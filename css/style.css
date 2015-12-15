@@ -10,17 +10,17 @@ body {
     background-color: #DEDEDE;
 }
 hr {
-	align: center;
-	width: 75%;
+    align: center;
+    width: 75%;
     background-color: #D3D3D3;
     border-radius: 50%;
     border-color: #D3D3D3;
     border-style: ridge;
     display: block;
     height: 1px;
-
-	margin-left: auto;
-	margin-right: auto;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 /*Link Color Config*/
 
@@ -96,11 +96,17 @@ a:active {
     padding: 0;
     color: #000;
 }
+/*#cssmenu #no-sub {
+	color: #344596;
+	background-color: #DEDEDE;
+	border-radius: 100%;
+}*/
+
 #cssmenu {
-	left: 11%;
-	top: 250px;
-	position: fixed;
-    font-family: 'Lato', sans-serif;
+    left: 8%;
+    top: 250px;
+    position: fixed;
+    font-family: 'Roboto Slab', sans-serif;
     width: 80%;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -126,6 +132,7 @@ a:active {
     display: block;
     float: none;
     zoom: 1;
+	postion: absolute;
 }
 #cssmenu > ul:before {
     content: '';
@@ -155,23 +162,25 @@ a:active {
 #cssmenu > ul > li > a:hover,
 #cssmenu > ul > li:hover > a {
     background-color: #707cb5;
-	
 }
 #cssmenu li li a {
     color: #344596;
     font-size: 15px;
+    margin: 5px;
+	height: 10px;
 }
 #cssmenu li li a:hover {
-	color: #4857a0;
+    border-radius: 50px;
     background-color: #e5e5e5;
     border-color: #4857a0;
+    color: #4857a0;
 }
 #cssmenu ul ul {
-	text-align: center;
-    margin: auto;
+    text-align: center;
+    margin-left: 10%;
     padding: 0 10px;
     float: none;
-	width: 85%;
+    width: 65%;
     background: white;
     border: 2px solid #4857a0;
     border-top: none;
@@ -187,7 +196,7 @@ a:active {
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 #cssmenu ul > li > ul > li {
-    margin-left:auto;
+    margin-left: auto;
     position: relative;
     padding: 0;
 }
@@ -195,7 +204,6 @@ a:active {
     padding: 10px 10px 10px 10px;
     display: block;
 }
-
 /*Header Config*/
 
 .header {
@@ -205,48 +213,59 @@ a:active {
     border-bottom-color: #D3D3D3;
     border-bottom-style: solid;
     border-bottom-width: 3px;
+    border-radius: 0 0 50px 50px;
     position: fixed;
     top: 0;
 }
-.header h1 {
-    color: white;
-    padding-top: 30px;
-    margin-left: 30px;
+.header p {
+	margin-left: 35%;
+	top: 150px;
+	color: #fff;
+    position: relative;
+	font-size: 50px;
+	z-index: 3;
+
 }
+.webTitle p {
+	text-align: center;
+	font-family: 'Roboto Slab', cursive;
+} 
 #headerImage {
-	margin-left:10%;
+	font-size: 50px;
+    margin-left: 10%;
 }
-#headerImage img{
-	margin-top: 2%;
-	position: fixed;
-	height:185px;
-	width: 80%;
+#headerImage img {
+    margin-top: 2%;
+    position: fixed;
+    height: 185px;
+    width: 80%;
     border-style: solid;
     border-width: 5px;
-	padding:5px;
-	border-radius: 15%;
-	border-color: #4857a0;
-	background-color: #5c6aab;
+    padding: 5px;
+    border-radius: 15%;
+    border-color: #4857a0;
+    background-color: #5c6aab;
+		z-index: 2;
 }
 /*Body Section Config*/
 
 .bodySection {
-	text-align: center;
+    text-align: center;
     width: 40%;
     height: 100%;
     background-color: #FFF;
-    margin-top: 25%;
+    margin-top: 20%;
     margin-bottom: 5%;
     margin-left: auto;
-	margin-right: auto;
-    
+    margin-right: auto;
     padding-top: 2%;
     padding-right: 5%;
     padding-bottom: 2%;
     padding-left: 5%;
-	border-color: #D3D3D3;
+    border-color: #D3D3D3;
     border-style: solid;
     border-width: 3px;
+	border-radius: 15%;
 }
 .bodySection #title {
     color: ;
@@ -261,6 +280,7 @@ a:active {
     font-family: 'Roboto Slab', sans-serif;
 }
 /*Contact form config*/
+
 #contactToggle {
     /*align: center;*/
 }
@@ -307,35 +327,35 @@ a:active {
     border-top-color: #D3D3D3;
     border-top-style: solid;
     border-top-width: 3px;
+	border-radius: 50px 50px 0 0;
 }
 /*History Page*/
-.lockSlide {
-	margin: auto;
-    width: 480px;
-    border:3px solid #fff;
-    padding: 15px;
-	background-color:#fff;
-}
-.lockSlide #content{
-	text-align: center;
-	background-color:#fff;
-}
 
+.lockSlide {
+    margin: auto;
+    width: 480px;
+    border: 3px solid #fff;
+    padding: 15px;
+    background-color: #fff;
+}
+.lockSlide #content {
+    text-align: center;
+    background-color: #fff;
+}
 /*Game1 Page*/
+
+#game1 p{
+    color: #344596;
+    font-family: 'Roboto Slab', sans-serif;
+    padding: 5px;
+    font-size: 200%;
+}
 #game1 {
 	border-color: #344596;
     border-style: solid;
     border-width: 3px;
+    background-color: #c2c7df;
 }
-
-#game1 {
-	color: #344596;
-    font-size: 200%;
-    padding: 15px;
-    font-family: 'Roboto Slab', sans-serif;
-	background-color: #c2c7df;
-}
-
 /***************/
 /*
 Credits:
