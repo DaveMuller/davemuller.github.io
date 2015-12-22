@@ -21,6 +21,7 @@ hr {
     margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 15px;
 }
 /*Link Color Config*/
 
@@ -63,7 +64,7 @@ a:active {
     min-height: 1px;
     line-height: 1.3em;
     vertical-align: middle;
-    padding: 2px;
+    padding: 10px;
 }
 #cssmenu > ul li:hover,
 #cssmenu > ul li:hover {
@@ -103,8 +104,8 @@ a:active {
 }*/
 
 #cssmenu {
-    left: 8%;
-    top: 250px;
+    left: 11%;
+    top: 215px;
     position: fixed;
     font-family: 'Roboto Slab', sans-serif;
     width: 80%;
@@ -113,8 +114,8 @@ a:active {
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
     border-radius: 25px 25px 10px 10px;
-    background: #344596;
-    font-size: 15px;
+    background-color: #344596;
+    font-size: 20px;
     -moz-box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.3);
     -webkit-box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.3);
     box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.3);
@@ -124,15 +125,14 @@ a:active {
     -moz-box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.3);
     box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.3);
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    border-radius: 50px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
     display: block;
     float: none;
     zoom: 1;
-	postion: absolute;
 }
 #cssmenu > ul:before {
     content: '';
@@ -165,9 +165,7 @@ a:active {
 }
 #cssmenu li li a {
     color: #344596;
-    font-size: 15px;
-    margin: 5px;
-	height: 10px;
+    font-size: 20px;
 }
 #cssmenu li li a:hover {
     border-radius: 50px;
@@ -177,10 +175,10 @@ a:active {
 }
 #cssmenu ul ul {
     text-align: center;
-    margin-left: 10%;
+    margin-left: 15%;
     padding: 0 10px;
     float: none;
-    width: 65%;
+    width: 60%;
     background: white;
     border: 2px solid #4857a0;
     border-top: none;
@@ -196,20 +194,33 @@ a:active {
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 #cssmenu ul > li > ul > li {
+    margin: 0 10px 0 0;
     margin-left: auto;
     position: relative;
     padding: 0;
 }
 #cssmenu ul > li > ul > li > a {
-    padding: 10px 10px 10px 10px;
+    padding: 10px 20px 10px 10px;
     display: block;
+}
+
+.menuBackground {
+	background-color: #344596;
+	border-radius: 25px 25px 10px 10px;
+	padding: 15px;
+	left: 10%;
+    top: 205px;
+    position: fixed;
+    width: 80%;
+	height: 5%;
+	z-index: 3;
 }
 /*Header Config*/
 
 .header {
-    background-color: #344596;
+    background-image: linear-gradient(#000, #344596, #000, #000, #344596, #000);
     width: 100%;
-    height: 155px;
+    height: 135px;
     border-bottom-color: #D3D3D3;
     border-bottom-style: solid;
     border-bottom-width: 3px;
@@ -218,26 +229,22 @@ a:active {
     top: 0;
 }
 .header p {
-	margin-left: 35%;
-	top: 150px;
-	color: #fff;
+    text-align: center;
+    top: 115px;
+    color: #fff;
     position: relative;
-	font-size: 50px;
-	z-index: 3;
-
+	right: 5%;
+    font-size: 50px;
+    z-index: 3;
 }
-.webTitle p {
-	text-align: center;
-	font-family: 'Roboto Slab', cursive;
-} 
 #headerImage {
-	font-size: 50px;
+    font-size: 50px;
     margin-left: 10%;
 }
 #headerImage img {
     margin-top: 2%;
     position: fixed;
-    height: 185px;
+    height: 150px;
     width: 80%;
     border-style: solid;
     border-width: 5px;
@@ -245,17 +252,18 @@ a:active {
     border-radius: 15%;
     border-color: #4857a0;
     background-color: #5c6aab;
-		z-index: 2;
+    z-index: 2;
 }
 /*Body Section Config*/
 
-.bodySection {
+.bodySection,
+.bodySection2 {
     text-align: center;
     width: 40%;
     height: 100%;
     background-color: #FFF;
-    margin-top: 20%;
-    margin-bottom: 5%;
+    margin-top:  350px;
+    margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 2%;
@@ -265,18 +273,19 @@ a:active {
     border-color: #D3D3D3;
     border-style: solid;
     border-width: 3px;
-	border-radius: 15%;
+    border-radius: 15%;
 }
-.bodySection #title {
+.bodySection #title,
+.bodySection2 #title {
     color: ;
     font-size: 200%;
-    padding-bottom: 15px;
     font-family: 'Roboto Slab', sans-serif;
 }
-.bodySection #content {
+.bodySection #content,
+.bodySection2 #content {
     color: #000;
     font-size: 150%;
-    padding: 10px;
+    padding: 5px 10px 10px 10px;
     font-family: 'Roboto Slab', sans-serif;
 }
 /*Contact form config*/
@@ -327,7 +336,15 @@ a:active {
     border-top-color: #D3D3D3;
     border-top-style: solid;
     border-top-width: 3px;
-	border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+}
+.footer p {
+    text-align: center;
+    font-family: 'Roboto Slab', cursive;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: 0;
 }
 /*History Page*/
 
@@ -344,20 +361,39 @@ a:active {
 }
 /*Game1 Page*/
 
-#game1 p{
+#game1 p {
     color: #344596;
     font-family: 'Roboto Slab', sans-serif;
     padding: 5px;
     font-size: 200%;
 }
 #game1 {
-	border-color: #344596;
+    border-color: #344596;
     border-style: solid;
     border-width: 3px;
     background-color: #c2c7df;
 }
+
+
+#cssmenu:hover > div {
+  opacity: 0.5;
+}
+
+#cssmenu:hover > div:hover {
+  opacity: 1.0;
+}
+
 /***************/
 /*
 Credits:
 Drop down menu code modified from: http://cssmenumaker.com/menu/flat-horizontal-drop-down-menu
 */
+
+
+
+
+
+
+
+
+
