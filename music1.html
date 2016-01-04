@@ -1,110 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Favorite Movies | Homepage of David Muller</title>
+    <title>Music | Homepage of David Muller</title>
     <link rel="website icon" href="images/icon.ico">
-    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster|Satisfy' rel='stylesheet' type='text/css'>
+    <!--------->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <!--Drop Down Menu-->
+<!--        <div class="headerText">
+            <h1 id="myName"><a href="index.html">David Muller<a></h1>
+            <h1 id="pageName">Home</h1>
+        </div>-->
+
     <div class="header">
-        <div id="headerImage">
-            <img src="images/headerImage.jpg">
-            <p>Daft Punk</p>
+    </div>
+
+
+    <div class="container">
+        <div class="jumbotron">
+            <img src="images/headerImage.jpg" alt="Home" class="img-rounded" width="100%" ; height="150">
         </div>
-    </div>
-    <div id='cssmenu'>
-			<div class="menuBackground">
-		</div>
-        <ul>
-            <li id="no-sub"><a href="index.html"><span>Home</span></a>
-            </li>
-            <li class='active has-sub'><a href='#'>School Courses</span></a>
-                <ul>
-                    <li class='has-sub'><a href='school1.html'><span>Web Design</span></a>
-                    </li>
-                    <li class='has-sub'><a href='school2.html'><span>Political Gov</span></a>
-                    </li>
-                    <li class='has-sub'><a href='school3.html'><span>Advanced Computer Programming</span></a>
-                    </li>
-                    <li class='has-sub'><a href='school4.html'><span>Computer Lab</span></a>
-                    </li>
-                </ul>
-            </li>
-            <li class='active has-sub'><a href='#'>Music</span></a>
-                <ul>
-                    <li class='has-sub'><a href='music1.html'><span>Daft Punk</span></a>
-                    </li>
-                    <li class='has-sub'><a href='music2.html'><span>Phoenix</span></a>
-                    </li>
-                </ul>
-            </li>
-            <li class='active has-sub'><a href='#'>Movies</span></a>
-                <ul>
-                    <li class='has-sub'><a href='movies1.html'><span>The Dark Night</span></a>
-                    </li>
-                    <li class='has-sub'><a href='movies2.html'><span>Star Wars</span></a>
-                    </li>
-                </ul>
-            </li>
-            <li class='active has-sub'><a href='#'>Books</span></a>
-                <ul>
-                    <li class='has-sub'><a href='books1.html'><span>Fast Food Nation</span></a>
-                    </li>
-                    <li class='has-sub'><a href='books2.html'><span>The City of Ember</span></a>
-                    </li>
-                </ul>
-            </li>
-            <li class='active has-sub'><a href='#'>Television Shows</span></a>
-                <ul>
-                    <li class='has-sub'><a href='tv1.html'><span>Rick and Morty</span></a>
-                    </li>
-                    <li class='has-sub'><a href='tv2.html'><span>Community</span></a>
-                    </li>
-                    <li class='has-sub'><a href='tv3.html'><span>Arrested Development</span></a>
-                    </li>
-                </ul>
-        </ul>
-    </div>
-    <div class="bodySection">
-        <p id="title">About This Website</p>
-        <hr>
-        <script src="js/getName.js"></script>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a>
+                        </li>
+                        <li class="active"><a href="games.html">Games</a>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">School Courses <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="school1.html">Political Government</a>
+                                </li>
+                                <li><a href="school2.html">Advanced Computer Programing</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="index.html">Music<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="music1.html">Daft Punk</a>
+                                </li>
+                                <li><a href="music2.html">Phoenix</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Movies <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="movie1.html">The Dark Knight</a>
+                                </li>
+                                <li><a href="movie2.html">Star Wars</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Books<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="book1.html">Fast Food Nation</a>
+                                </li>
+                                <li><a href="book2.html">The City of Ember</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Television Shows<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="tv1.html">Rick and Morty</a>
+                                </li>
+                                <li><a href="tv2.html">Community</a>
+                                </li>
+                                <li><a href="tv3.html">Arrested Development</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Other Sites<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="artist3.html">Emma's Website</a>
+                                </li>
+                                <li><a href="artist4.html">Annie's Website</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="well">
+            <p>Daft Punk</p>
+            <hr>
+			<center><img src="images/dpunk.jpg" alt="Daft Punk" width="626" height="424"></center>
+            <h3>"<i>Daft Punk are an electronic music duo consisting of French musicians Guy-Manuel de Homem-Christo and Thomas Bangalter. The duo achieved significant popularity in the late 1990s as part of the French house movement and were met with continued success in the years following, combining elements of house music with funk, techno, disco, rock, and synthpop.<i>"</h3>
+			<p id="source"><i>(Source: wikipedia.org/wiki/Daft_Punk)</i></p>
+			<hr>
+			<h3>Daft Punk is a band that i dont really lkuije</h3>
+        </div>
 
-        <p id="content">You found my website! This site contains several small code related activities, visuals, and other works that I have created throughout middle and high school. You can contact me by clicking the "Contact Me" button located below. Please leave feedback on how you liked my site and please provide details.</p>
     </div>
-
     <div class="footer">
-        <p>Contact Me: example@gmail.com</p>
+        <p id="emailLink">
+            <a href="mailto:dmuller116@gmail.com?Subject=Hello%20again" target="_top"> &#8594; Contact Me &#8592; </a>
+        </p>
     </div>
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/pageLoadAnim.js"></script>
 </body>
 
 </html>
-
-
-<!--<button id="contactToggle" class="contactButton">Contact Me</button>
-	    <div class="contact">
-        <form action="" method="POST" enctype="multipart/form-data">
-            <input name="action" value="submit" type="hidden">
-            <h1 align="center">Contact Me:</h1>
-            <br>
-            <p>Your name:</p>
-            <input name="name" size="30" type="text">
-            <br>
-            <br>
-            <p>Your email:</p>
-            <input name="email" size="30" type="text">
-            <br>
-            <br>
-            <p>Your message:</p>
-            <textarea name="message" rows="7" cols="30">
-            </textarea>
-            <br>
-            <br>
-            <input value="Send email" type="submit">
-        </form>
-    </div>-->

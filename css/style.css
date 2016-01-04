@@ -1,30 +1,139 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 html {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #000;
 }
+
 body {
-    font-size: 13px;
     background-color: #DEDEDE;
 }
 hr {
-    align: center;
-    width: 75%;
+    border-collapse: separate;
     background-color: #D3D3D3;
-    border-radius: 50%;
+    height: 1px;
     border-color: #D3D3D3;
     border-style: ridge;
-    display: block;
-    height: 1px;
-    margin-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
+    margin: 0 auto;
 }
-/*Link Color Config*/
 
+.jumbotron {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: transparent;
+  position: relative;
+}
+
+.jumbotron img {
+    border-radius: 15%;
+    border-color: #4857a0;
+    border-style: solid;
+    border-width: 5px;
+}
+.headerText {
+	position: relative;
+	margin: 0 auto;
+}
+.headerText #myName {
+    font-family: Lobster, cursive;
+    text-align: center;
+    font-size: 34px;
+    top:-600px;
+    color: red;
+    position: absolute;
+}
+.headerText #pageName {
+    text-align: center;
+    font-size: 34px;
+    position: absolute;
+	left:50%;
+    top:-550px;
+    color: red;
+}
+#myName a:link,
+a:visited {
+    color: red;
+}
+.container-fluid,
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: #344596;
+}
+.container .jumbotron,
+.container-fluid .jumbotron {
+  padding-right: 0px;
+  padding-left: 0px;
+  border-radius: 6px;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    font-size: 18px;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu {
+    border-radius: 0 0 15% 15%;
+}
+.well {
+    min-height: 40px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 12px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    margin: 10px 40px;
+    padding: 30px;
+	margin-bottom:40px;
+}
+.well h3 {
+	margin: 25px 30px 0 30px;
+}
+.well p {
+    text-align: center;
+    font-size: 34px;
+}
+
+.well img{
+	border-radius: 12px;
+	margin-top:15px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	height: auto;
+	width:75%;
+}
+.header {
+    top: 0;
+    border-bottom: 1px solid #e3e3e3;
+    border-radius: 0 0 12px 12px;
+    background-image: linear-gradient(#000, #344596, #000, #344596, #000);
+    height: 120px;
+    position: absolute;
+}
+.footer {
+    bottom: 0;
+    border-top: 1px solid #e3e3e3;
+    border-radius: 12px 12px 0 0;
+    background: #344596;
+    height: 60px;
+    position: fixed;
+}
+.footer,
+.header {
+    width: 100%;
+    color: #fff;
+}
+.footer #emailLink {
+    color: #7F7F7F;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: 0;
+}
+.footer #emailLink:hover {
+    color: #000;
+}
 a:link,
 a:visited,
 a:hover,
@@ -32,368 +141,16 @@ a:active {
     background-color: transparent;
     text-decoration: none;
 }
+#source {
+    font-size: 8px;
+	float:right:
+}
+.navbar-inverse .navbar-nav>li>a,
 a:link,
 a:visited {
-    color: black;
+    color: #fff;
 }
-a:hover {
-    color: white;
-}
+a:hover,
 a:active {
-    color: grey;
+    color: #999;
 }
-/*Drop Down Menu Config*/
-
-@charset "UTF-8";
-/* Base Styles */
-
-#cssmenu > ul,
-#cssmenu > ul li,
-#cssmenu > ul ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-#cssmenu > ul {
-    position: relative;
-    z-index: 597;
-    float: left;
-}
-#cssmenu > ul li {
-    float: left;
-    min-height: 1px;
-    line-height: 1.3em;
-    vertical-align: middle;
-    padding: 10px;
-}
-#cssmenu > ul li:hover,
-#cssmenu > ul li:hover {
-    z-index: 599;
-    cursor: default;
-}
-#cssmenu > ul ul {
-    visibility: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 598;
-}
-#cssmenu > ul ul li {
-    float: none;
-}
-#cssmenu > ul li:hover > ul {
-    visibility: visible;
-}
-/* Align last drop down RTL */
-/* Theme Styles */
-
-#cssmenu > ul a:link {
-    text-decoration: none;
-}
-#cssmenu > ul a:active {
-    color: #999999;
-}
-#cssmenu li {
-    padding: 0;
-    color: #000;
-}
-/*#cssmenu #no-sub {
-	color: #344596;
-	background-color: #DEDEDE;
-	border-radius: 100%;
-}*/
-
-#cssmenu {
-    left: 11%;
-    top: 215px;
-    position: fixed;
-    font-family: 'Roboto Slab', sans-serif;
-    width: 80%;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    border-radius: 25px 25px 10px 10px;
-    background-color: #344596;
-    font-size: 20px;
-    -moz-box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.3);
-    -webkit-box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.3);
-    box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.3);
-}
-#cssmenu > ul {
-    padding: 0 5px;
-    -moz-box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.3);
-    box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.3);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-    border-radius: 3px;
-    display: block;
-    float: none;
-    zoom: 1;
-}
-#cssmenu > ul:before {
-    content: '';
-    display: block;
-}
-#cssmenu > ul:after {
-    content: '';
-    display: table;
-    clear: both;
-}
-#cssmenu > ul > li {
-    padding: 8px 5px;
-}
-#cssmenu > ul > li > a,
-#cssmenu > ul > li > a:link,
-#cssmenu > ul > li > a:visited {
-    text-shadow: 0 -1px 1px #004881;
-    color: #fff;
-    padding: 7px 20px;
-    display: block;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    border-radius: 50px;
-}
-#cssmenu > ul > li > a:hover,
-#cssmenu > ul > li:hover > a {
-    background-color: #707cb5;
-}
-#cssmenu li li a {
-    color: #344596;
-    font-size: 20px;
-}
-#cssmenu li li a:hover {
-    border-radius: 50px;
-    background-color: #e5e5e5;
-    border-color: #4857a0;
-    color: #4857a0;
-}
-#cssmenu ul ul {
-    text-align: center;
-    margin-left: 15%;
-    padding: 0 10px;
-    float: none;
-    width: 60%;
-    background: white;
-    border: 2px solid #4857a0;
-    border-top: none;
-    right: 0;
-    left: 0;
-    -webkit-border-radius: 0 0 50px 50px;
-    -moz-border-radius: 0 0 50px 50px;
-    -ms-border-radius: 0 0 50px 50px;
-    -o-border-radius: 0 0 50px 50px;
-    border-radius: 0 0 25px 25px;
-    -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-}
-#cssmenu ul > li > ul > li {
-    margin: 0 10px 0 0;
-    margin-left: auto;
-    position: relative;
-    padding: 0;
-}
-#cssmenu ul > li > ul > li > a {
-    padding: 10px 20px 10px 10px;
-    display: block;
-}
-
-.menuBackground {
-	background-color: #344596;
-	border-radius: 25px 25px 10px 10px;
-	padding: 15px;
-	left: 10%;
-    top: 205px;
-    position: fixed;
-    width: 80%;
-	height: 5%;
-	z-index: 3;
-}
-/*Header Config*/
-
-.header {
-    background-image: linear-gradient(#000, #344596, #000, #000, #344596, #000);
-    width: 100%;
-    height: 135px;
-    border-bottom-color: #D3D3D3;
-    border-bottom-style: solid;
-    border-bottom-width: 3px;
-    border-radius: 0 0 50px 50px;
-    position: fixed;
-    top: 0;
-}
-.header p {
-    text-align: center;
-    top: 115px;
-    color: #fff;
-    position: relative;
-	right: 5%;
-    font-size: 50px;
-    z-index: 3;
-}
-#headerImage {
-    font-size: 50px;
-    margin-left: 10%;
-}
-#headerImage img {
-    margin-top: 2%;
-    position: fixed;
-    height: 150px;
-    width: 80%;
-    border-style: solid;
-    border-width: 5px;
-    padding: 5px;
-    border-radius: 15%;
-    border-color: #4857a0;
-    background-color: #5c6aab;
-    z-index: 2;
-}
-/*Body Section Config*/
-
-.bodySection,
-.bodySection2 {
-    text-align: center;
-    width: 40%;
-    height: 100%;
-    background-color: #FFF;
-    margin-top:  350px;
-    margin-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 2%;
-    padding-right: 5%;
-    padding-bottom: 2%;
-    padding-left: 5%;
-    border-color: #D3D3D3;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 15%;
-}
-.bodySection #title,
-.bodySection2 #title {
-    color: ;
-    font-size: 200%;
-    font-family: 'Roboto Slab', sans-serif;
-}
-.bodySection #content,
-.bodySection2 #content {
-    color: #000;
-    font-size: 150%;
-    padding: 5px 10px 10px 10px;
-    font-family: 'Roboto Slab', sans-serif;
-}
-/*Contact form config*/
-
-#contactToggle {
-    /*align: center;*/
-}
-.contactButton {
-    margin-bottom: 5px;
-    padding: 10px;
-    width: 300px;
-}
-.contact {
-    position: relative;
-    bottom: 0;
-}
-.contact form {
-    background: white;
-    margin: auto;
-    margin-bottom: 10%;
-    width: 250px;
-    padding-right: 20px;
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-.contact form p {
-    color: black;
-    font-family: 'Roboto Slab', sans-serif;
-}
-.contact input,
-.contact textarea {
-    background: #DEDEDE;
-}
-.contact form {
-    border-color: #D3D3D3;
-    border-style: solid;
-    border-width: 2x;
-}
-/*Footer Config*/
-
-.footer {
-    width: 100%;
-    height: 60px;
-    background: white;
-    position: fixed;
-    bottom: 0;
-    border-top-color: #D3D3D3;
-    border-top-style: solid;
-    border-top-width: 3px;
-    border-radius: 50px 50px 0 0;
-}
-.footer p {
-    text-align: center;
-    font-family: 'Roboto Slab', cursive;
-    font-size: 15px;
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: 0;
-}
-/*History Page*/
-
-.lockSlide {
-    margin: auto;
-    width: 480px;
-    border: 3px solid #fff;
-    padding: 15px;
-    background-color: #fff;
-}
-.lockSlide #content {
-    text-align: center;
-    background-color: #fff;
-}
-/*Game1 Page*/
-
-#game1 p {
-    color: #344596;
-    font-family: 'Roboto Slab', sans-serif;
-    padding: 5px;
-    font-size: 200%;
-}
-#game1 {
-    border-color: #344596;
-    border-style: solid;
-    border-width: 3px;
-    background-color: #c2c7df;
-}
-
-
-#cssmenu:hover > div {
-  opacity: 0.5;
-}
-
-#cssmenu:hover > div:hover {
-  opacity: 1.0;
-}
-
-/***************/
-/*
-Credits:
-Drop down menu code modified from: http://cssmenumaker.com/menu/flat-horizontal-drop-down-menu
-*/
-
-
-
-
-
-
-
-
-
