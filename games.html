@@ -6,7 +6,9 @@
     <link rel="website icon" href="images/icon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <!--Fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Lobster|Open+Sans|Bangers' rel='stylesheet' type='text/css'>
+    <!--------->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -14,15 +16,16 @@
 </head>
 
 <body>
-	
-
-			    <div class="header">
+    <div class="header">
     </div>
-	
-    <div class="container">
+    <div class="headerText">
+        <a href="index.html">David Muller</a>
+        <h1>Games</h1>
+    </div>
         <div class="jumbotron">
-            <img src="images/headerImage.jpg" alt="Home"class="img-rounded" width="100%"; height="150">
+            <center><img src="images/headerImage.jpg" alt="Home" class="img-rounded" width="75%" ; height="150px"></center>
         </div>
+    <div class="container">
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div>
@@ -88,26 +91,19 @@
         <div class="well">
             <p>Video Game Trivia</p>
             <hr>
-                        <div id="game1">
-                <p>
-                    
+            <div id="game1">
+                <p> Asking question <span id="NumberAsked">1</span> of 10:
 
-                    <br> Asking question <span id="NumberAsked">1</span> of 10:
-					
-                <p>
-                    <span id="TriviaQuestion">???</span>
+                    <p><span id="TriviaQuestion">???</span> </p>
+                    <p> &nbsp;
+                        <input id="RadioTrue" type="radio" value="true" name="answer" checked="checked" /> True &nbsp;&nbsp;&nbsp;
+                        <input id="RadioFalse" type="radio" value="false" name="answer" /> False </p>
+                    <p>
+                        <input id="ButtonContinue" onclick="checkAnswer();" type="button" value="Submit" />
+                        <br> <span id="NumberCorrect">0</span> answer(s) correct</p>
                 </p>
-                <p>
-                    &nbsp;
-                    <input id="RadioTrue" type="radio" value="true" name="answer" checked="checked" /> True &nbsp;&nbsp;&nbsp;
-                    <input id="RadioFalse" type="radio" value="false" name="answer" /> False
-                </p>
-                <p>
-                    <input id="ButtonContinue" onclick="checkAnswer();" type="button" value="Submit" />
-					<br> <span id="NumberCorrect">0</span> answer(s) correct</p>
-                </p>
-				<p id="source">(Source)</p>
-					
+                <p id="source">(Source)</p>
+
                 <script language="javascript" type="text/javascript">
                     // Array of trivia data
                     var TriviaData = new Array(10)
@@ -213,9 +209,9 @@
                         document.getElementById("NumberCorrect").innerHTML = totalCorrect;
                     }
                 </script>
-        </p>
+                </p>
+            </div>
         </div>
-</div>
     </div>
 
     <div class="footer">

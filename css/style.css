@@ -1,135 +1,139 @@
 html {
+    color: #000;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
-    color: #000;
 }
-
 body {
     background-color: #DEDEDE;
 }
 hr {
-    border-collapse: separate;
     background-color: #D3D3D3;
-    height: 1px;
+    border-collapse: separate;
     border-color: #D3D3D3;
     border-style: ridge;
-    margin: 0 auto;
+    height: 1px;
+    margin: 20px auto 20px auto;
+	margin
 }
-
 .jumbotron {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  color: inherit;
-  background-color: transparent;
-  position: relative;
+    background-color: transparent;
+    color: inherit;
+    margin-bottom: 30px;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-top: 30px;
+    position: relative;
 }
 
 .jumbotron img {
-    border-radius: 15%;
     border-color: #4857a0;
+    border-radius: 15%;
     border-style: solid;
     border-width: 5px;
-}
-.headerText {
-	position: relative;
 	margin: 0 auto;
 }
-.headerText #myName {
-    font-family: Lobster, cursive;
-    text-align: center;
-    font-size: 34px;
-    top:-600px;
-    color: red;
-    position: absolute;
+.headerText {
+	left: 50%;
+	font-size: 40px;
+	margin: 40px 0px 0px -110px;
+	position:absolute;
+	text-align:center;
+	z-index: 1;
 }
-.headerText #pageName {
-    text-align: center;
-    font-size: 34px;
-    position: absolute;
-	left:50%;
-    top:-550px;
-    color: red;
+.headerText h1 {
+	color: #fff;
 }
-#myName a:link,
-a:visited {
-    color: red;
+.headerText h1 #gamePageHeader{
+	font-family: 'Bangers', cursive;
+}
+.headerText a {
+    font-family: 'Lobster', cursive;
+    font-size: 44px;	
 }
 .container-fluid,
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:focus,
 .navbar-inverse .navbar-nav>.active>a:hover {
+	font-size: 18px;
     background-color: #344596;
 }
 .container .jumbotron,
 .container-fluid .jumbotron {
-  padding-right: 0px;
-  padding-left: 0px;
-  border-radius: 6px;
-}
-.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-    font-size: 18px;
+    border-radius: 6px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 .navbar-inverse .navbar-nav .open .dropdown-menu {
     border-radius: 0 0 15% 15%;
 }
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    font-size: 18px;
+}
 .well {
-    min-height: 40px;
     background-color: #f5f5f5;
     border: 1px solid #e3e3e3;
     border-radius: 12px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
-    margin: 10px 40px;
+    margin: 10px 40px 80px 40px;
+    min-height: 40px;
     padding: 30px;
-	margin-bottom:40px;
+    webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
 }
 .well h3 {
-	margin: 25px 30px 0 30px;
+    margin: 25px 30px 0 30px;
 }
 .well p {
-    text-align: center;
     font-size: 34px;
+    text-align: center;
 }
-
-.well img{
-	border-radius: 12px;
-	margin-top:15px;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	height: auto;
-	width:75%;
+.well img {
+    border-radius: 12px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    position: relative;
+    width: 75%;
+}
+.createdBy h4 {
+    font-size: 12px;
+    text-align: center;
+}
+.video-container {
+    position: relative;
+    padding-top: 35px;
+    overflow: hidden;
 }
 .header {
-    top: 0;
+    background-image: linear-gradient(#000, #344596, #000, #344596, #000);
     border-bottom: 1px solid #e3e3e3;
     border-radius: 0 0 12px 12px;
-    background-image: linear-gradient(#000, #344596, #000, #344596, #000);
     height: 120px;
     position: absolute;
+    top: 0;
 }
 .footer {
-    bottom: 0;
-    border-top: 1px solid #e3e3e3;
-    border-radius: 12px 12px 0 0;
     background: #344596;
+    border-radius: 12px 12px 0 0;
+    border-top: 1px solid #e3e3e3;
+    bottom: 0;
     height: 60px;
     position: fixed;
+	padding: 5px 0 5px 0;
 }
 .footer,
 .header {
-    width: 100%;
     color: #fff;
+    width: 100%;
 }
 .footer #emailLink {
     color: #7F7F7F;
-    text-align: center;
     font-size: 15px;
-    margin-top: 15px;
     margin-left: auto;
     margin-right: 0;
+    margin-top: 15px;
+    text-align: center;
 }
 .footer #emailLink:hover {
     color: #000;
@@ -142,8 +146,8 @@ a:active {
     text-decoration: none;
 }
 #source {
-    font-size: 8px;
-	float:right:
+    float: right: ;
+    font-size: 12px;
 }
 .navbar-inverse .navbar-nav>li>a,
 a:link,
