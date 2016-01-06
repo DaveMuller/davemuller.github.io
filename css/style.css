@@ -13,8 +13,6 @@ hr {
     border-color: #D3D3D3;
     border-style: ridge;
     height: 1px;
-    margin: 20px auto 20px auto;
-	margin
 }
 .jumbotron {
     background-color: transparent;
@@ -87,6 +85,14 @@ hr {
     font-size: 34px;
     text-align: center;
 }
+.well a:link,
+.well a:visited {
+    color: #999;
+}
+.well a:hover,
+.well a:active {
+    color: #4c4c4c;
+}
 .well img {
     border-radius: 12px;
     height: auto;
@@ -95,6 +101,15 @@ hr {
     margin-top: 15px;
     position: relative;
     width: 75%;
+}
+.pyAdv {
+	margin: 30px auto;
+	border-radius:5px;
+	background-color:#fff;
+	border-radius:12px;
+}
+.pyAdv img{
+	padding: 15px 0;
 }
 .createdBy h4 {
     font-size: 12px;
