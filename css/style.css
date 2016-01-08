@@ -26,47 +26,59 @@ hr {
 
 .jumbotron img {
     border-color: #4857a0;
-    border-radius: 15%;
+    border-radius: 40px;
     border-style: solid;
     border-width: 5px;
-	margin: 0 auto;
+	z-index:1;
 }
-.headerText {
-	left: 50%;
-	font-size: 40px;
+.jumbotron p {
+	color: #000;
+	z-index:1;
+	position: absolute;
+	margin-top: 100px;
+	text-align: center;
+}
+/*
+*/
+.myName,
+.pageTitle {
+	left: 45%;
 	margin: 40px 0px 0px -110px;
-	position:absolute;
-	text-align:center;
+	position: absolute;
+	text-align: center;
 	z-index: 1;
 }
-.headerText h1 {
-	color: #fff;
-}
-.headerText h1 #gamePageHeader{
-	font-family: 'Bangers', cursive;
-}
-.headerText a {
+.myName a {
     font-family: 'Lobster', cursive;
-    font-size: 44px;	
+    font-size: 50px;	
+}
+.pageTitle {
+	top: 60px;
+	margin: 0 auto;
+}
+.pageTitle h1{
+	font-size: 40px;
+	color: #fff;
+	text-align: center;
 }
 .container-fluid,
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:focus,
 .navbar-inverse .navbar-nav>.active>a:hover {
-	font-size: 18px;
+	font-size: 17px;
     background-color: #344596;
 }
-.container .jumbotron,
+/*.container .jumbotron,
 .container-fluid .jumbotron {
     border-radius: 6px;
     padding-left: 0px;
     padding-right: 0px;
-}
-.navbar-inverse .navbar-nav .open .dropdown-menu {
-    border-radius: 0 0 15% 15%;
-}
+}*/
 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-    font-size: 18px;
+    font-size: 17px;
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+	border-radius: 12px;
 }
 .well {
     background-color: #f5f5f5;
@@ -121,7 +133,7 @@ hr {
     overflow: hidden;
 }
 .header {
-    background-image: linear-gradient(#000, #344596, #000, #344596, #000);
+    background-image: linear-gradient(#000, #344596, #344596, #000);
     border-bottom: 1px solid #e3e3e3;
     border-radius: 0 0 12px 12px;
     height: 120px;
@@ -129,9 +141,9 @@ hr {
     top: 0;
 }
 .footer {
-    background: #344596;
+    background-image: linear-gradient(#000, #344596, #344596, #344596, #344596, #000);
     border-radius: 12px 12px 0 0;
-    border-top: 1px solid #e3e3e3;
+    border-top: 1px solid #000;
     bottom: 0;
     height: 60px;
     position: fixed;
@@ -143,10 +155,11 @@ hr {
 }
 .footer #emailLink {
     color: #7F7F7F;
+    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     margin-left: auto;
     margin-right: 0;
-    margin-top: 15px;
+    margin-top: 10px;
     text-align: center;
 }
 .footer #emailLink:hover {
