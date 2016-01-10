@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Fonts-->
-	<link href='https://fonts.googleapis.com/css?family=Lobster|Open+Sans|Bangers' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster|Open+Sans|Bangers|Candal|Orbitron' rel='stylesheet' type='text/css'> 
     <!--------->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -19,15 +19,16 @@
 
 <body>
     <div class="header">
-    </div>
-    <div class="myName">
-        <a href="index.html">David Muller</a>
-		<div class="pageTitle">
-			<h1>School Courses</h1>
+	</div>
+	<div class="container">
+		<div class="headerText">
+		<a href="index.html" >David Muller</a>
+		<br>
+		<h1>School</h1> 
 		</div>
-    </div>
+	</div>
     <div class="jumbotron">
-        <center><img src="images/headerImage.jpg" alt="Home" class="img-rounded" width="75%" ; height="150px">
+        <center><img src="images/headerImage.jpg" alt="Home" class="img-rounded" width="75%" height="150px">
         </center>
     </div>
     <div class="container">
@@ -40,7 +41,7 @@
                         <li class="active"><a href="games.html"><span class="glyphicon glyphicon-tasks"></span> Games </a>
                         </li>
                         <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"> <span class="glyphicon glyphicon-education"></span> School Courses <span class="caret"></span>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"> <span class="glyphicon glyphicon-education"></span> School <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a href="school1.html"> Political Government </a>
@@ -57,7 +58,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-facetime-film"></span><span class="glyphicon glyphicon-film"></span> Movie <span class="caret"></span></a>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-facetime-film"></span><span class="glyphicon glyphicon-film"></span> Movies <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="movie1.html"> The Dark Knight </a>
                                 </li>
@@ -75,19 +76,19 @@
                         </li>
                         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-tv"></span><span class="glyphicon glyphicon-facetime-video"></span> Television Shows <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="tv1.html">Rick and Morty</a>
+                                <li><a href="tv1.html"> Rick and Morty </a>
                                 </li>
-                                <li><a href="tv2.html">Community</a>
+                                <li><a href="tv2.html"> Community </a>
                                 </li>
-                                <li><a href="tv3.html">Arrested Development</a>
+                                <li><a href="tv3.html"> Arrested Development </a>
                                 </li>
                             </ul>
                         </li>
                         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-picture"></span> Artist Websites<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="artist3.html">Emma's Website</a>
+                                <li><a href="artist3.html"> Emma Frick </a>
                                 </li>
-                                <li><a href="artist4.html">Annie's Website</a>
+                                <li><a href="artist4.html"> Annie O'Dea </a>
                                 </li>
                             </ul>
                         </li>
@@ -101,14 +102,45 @@
             <h3>For the final I had to create for this course in my sophmore year of high school, we had to write program using any language that we learned that course to illustrate our understanding of that language of our choosing. Since Python was my favorite language at the time (and still is) I decided to use it to make a RPG style text game. In this program, the user is presented with a situation which required them to input a key to respond to the corresponding situation. There are many different endings, but only three styles of ending, the being a good, bad, or decent. Since we had about a month to complete the project, we had time to make our projects rather worthwhile to look at. If you are interested in trying out this program, you can find the code for this program <a href="http://pastebin.com/kJrBkMfC">[here]	</a></h3>
 			<br>
 			<h3>Here are some screenshots of the program running and of the code:	</h3>
-			<center>
-			<div class="pyAdv"><img src="images/pyAdv1.jpg" alt="Python Adventure"></div>
-			<div class="pyAdv"><img src="images/pyAdv2.jpg" alt="Python Adventure"></div>
-			<div class="pyAdv"><img src="images/pyAdv3.jpg" alt="Python Adventure"></div>
-			<div class="pyAdv"><img src="images/pyAdv4.jpg" alt="Python Adventure"></div>
-			</center>
 			
-			
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/pyAdv1.jpg" alt="Chania">
+    </div>
+
+    <div class="item">
+      <img src="images/pyAdv2.jpg" alt="Chania">
+    </div>
+
+    <div class="item">
+      <img src="images/pyAdv3.jpg" alt="Flower">
+    </div>
+
+    <div class="item">
+      <img src="images/pyAdv4.jpg" alt="Flower">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 </div>
     </div>
 

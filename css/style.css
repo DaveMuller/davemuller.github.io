@@ -1,3 +1,7 @@
+* {
+	margin: 0;
+	padding: 0;
+}
 html {
     color: #000;
     font-family: 'Open Sans', sans-serif;
@@ -23,7 +27,9 @@ hr {
     padding-top: 30px;
     position: relative;
 }
-
+.jumbotron #headerText{
+	position: absolute;
+}
 .jumbotron img {
     border-color: #4857a0;
     border-radius: 40px;
@@ -31,35 +37,23 @@ hr {
     border-width: 5px;
 	z-index:1;
 }
-.jumbotron p {
-	color: #000;
-	z-index:1;
-	position: absolute;
-	margin-top: 100px;
-	text-align: center;
-}
-/*
-*/
-.myName,
-.pageTitle {
-	left: 45%;
-	margin: 40px 0px 0px -110px;
-	position: absolute;
-	text-align: center;
-	z-index: 1;
-}
-.myName a {
-    font-family: 'Lobster', cursive;
-    font-size: 50px;	
-}
-.pageTitle {
-	top: 60px;
-	margin: 0 auto;
-}
-.pageTitle h1{
-	font-size: 40px;
+.headerText a,
+.headerText h1 {
 	color: #fff;
-	text-align: center;
+	z-index: 1;
+	position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.headerText a {
+	margin-top: 70px;
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+}
+.headerText h1{
+	margin-top: 120px;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 40px;
 }
 .container-fluid,
 .navbar-inverse .navbar-nav>.active>a,
@@ -68,12 +62,7 @@ hr {
 	font-size: 17px;
     background-color: #344596;
 }
-/*.container .jumbotron,
-.container-fluid .jumbotron {
-    border-radius: 6px;
-    padding-left: 0px;
-    padding-right: 0px;
-}*/
+
 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     font-size: 17px;
 }
@@ -107,12 +96,10 @@ hr {
 }
 .well img {
     border-radius: 12px;
-    height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
     position: relative;
-    width: 75%;
 }
 .pyAdv {
 	margin: 30px auto;
@@ -133,16 +120,24 @@ hr {
     overflow: hidden;
 }
 .header {
-    background-image: linear-gradient(#000, #344596, #344596, #000);
+    background-image: linear-gradient(#000, #344596);
     border-bottom: 1px solid #e3e3e3;
-    border-radius: 0 0 12px 12px;
+    border-radius: 0 0 20px 20px;
     height: 120px;
     position: absolute;
     top: 0;
 }
+.well p {
+	font-weight: bold;
+font-family: 'Candal', sans-serif;
+}
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 80%;
+      margin: auto;
+  }
 .footer {
-    background-image: linear-gradient(#000, #344596, #344596, #344596, #344596, #000);
-    border-radius: 12px 12px 0 0;
+    background-image: linear-gradient(#344596, #000) ;
     border-top: 1px solid #000;
     bottom: 0;
     height: 60px;
