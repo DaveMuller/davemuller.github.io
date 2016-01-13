@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Fonts-->
-    <link href='https://fonts.googleapis.com/css?family=Lobster|Open+Sans|Bangers|Candal|Orbitron' rel='stylesheet' type='text/css'> 
+    <link href='https://fonts.googleapis.com/css?family=Lobster|Open+Sans|Bangers|Candal|Orbitron' rel='stylesheet' type='text/css'>
     <!--------->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -19,14 +19,14 @@
 
 <body>
     <div class="header">
-	</div>
-	<div class="container">
-		<div class="headerText">
-		<a href="index.html" >David Muller</a>
-		<br>
-		<h1>Home</h1> 
-		</div>
-	</div>
+    </div>
+    <div class="container">
+        <div class="headerText">
+            <a href="index.html">David Muller</a>
+            <br>
+            <h1>Home</h1>
+        </div>
+    </div>
     <div class="jumbotron">
         <center><img src="images/headerImage.jpg" alt="Home" class="img-rounded" width="75%" height="150px">
         </center>
@@ -97,12 +97,82 @@
             </div>
         </nav>
         <div class="well">
-            <p><b>About This Website</b></p>
+            <p><b>About This Website</b>
+            </p>
             <hr>
-			<!--<span style="display:inline-block; width: 40px;"></span> -->
-            <h3><font size="12" face="'Bangers'">Hello!</font> and welcome to my website! Under the "Games" category, you will find programs and games I have created using different programming languages. Under "School" you will find a list of different courses that I have taken in high school, each showing off different assignments that I had during the course, such as documents and presentations. In the "Music", "Movies", "Books", and " Television Shows" categories, you will find my favorites under the respective subject, each having some kind of impact my life growing up. In the last category titled "Artist Websites" you will find two different other websites that me and a group of other students from my high school have created for other students for their art class. I hope that you find this site to be useful in finding out about my personality. </h3>
-			<h3>I created this site for a final project for a Coding for Web Design Course that I had in high school, which I created at the same time as the other artist websites. If you have any kind comments about my website or just about me, feel free to contact me by clicking on "Contact Me" at the bottom of each page.</h3>
-			<!--<img src="images/anIcon.png" class="img-rounded" alt="icon" width="304" height="236">-->
+            <!--<span style="display:inline-block; width: 40px;"></span> -->
+            <h3><font size="12" face="'Bangers', cursive">Hello!</font> and welcome to my website! Under the "Games" category, you will find programs and games I have created using different programming languages. Under "School" you will find a list of different courses that I have taken in high school, each showing off different assignments that I had during the course, such as documents and presentations. In the "Music", "Movies", "Books", and " Television Shows" categories, you will find my favorites under the respective subject, each having some kind of impact my life growing up. In the last category titled "Artist Websites" you will find two different other websites that me and a group of other students from my high school have created for other students for their art class. I hope that you find this site to be useful in finding out about my personality. </h3>
+            <h3>I created this site for a final project for a Coding for Web Design Course that I had in high school, which I created at the same time as the other artist websites. If you have any kind comments about my website or just about me, feel free to contact me by clicking on "Contact Me" at the bottom of each page.</h3>
+            <h3>Anyway....</h3>
+            <h3>Enjoy this awsome snowman and present I made using javascript!</h3>
+            <canvas id="myCanvas" width="600" height="850">
+                Your browser does not support the HTML5 canvas tag.</canvas>
+            <div class="snowman">
+                <script>
+                    var c = document.getElementById("myCanvas");
+                    var ctx = c.getContext("2d");
+
+
+                    <!--Circle Body-->
+                    ctx.beginPath();
+                    ctx.fillStyle = "#fff";
+                    ctx.arc(200, 700, 100, 0, 2 * Math.PI);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    ctx.beginPath();
+                    ctx.arc(200, 565, 75, 0, 2 * Math.PI);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    ctx.beginPath();
+                    ctx.arc(200, 470, 50, 0, 2 * Math.PI);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    <!--Rectangle Hat-->
+                    ctx.beginPath();
+                    ctx.fillStyle = "#000";
+                    ctx.rect(125, 425, 150, 20);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    ctx.beginPath();
+                    ctx.fillStyle = "#000";
+                    ctx.rect(150, 320, 100, 125);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    <!--Circle Body-->
+                    ctx.beginPath();
+                    ctx.arc(190, 470, 5, 0, 2 * Math.PI);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    ctx.beginPath();
+                    ctx.arc(235, 470, 5, 0, 2 * Math.PI);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    <!--Red/Green Present-->
+                    ctx.beginPath();
+                    ctx.fillStyle = "#f00";
+                    ctx.rect(450, 670, 125, 125);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    ctx.beginPath();
+                    ctx.fillStyle = "green";
+                    ctx.rect(500, 665, 25, 130);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    ctx.beginPath();
+                    ctx.rect(440, 670, 145, 25);
+                    ctx.fill();
+                    ctx.stroke();
+                </script>
+            </div>
         </div>
     </div>
     <div class="footer">

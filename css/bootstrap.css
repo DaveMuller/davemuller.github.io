@@ -4630,7 +4630,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   border-color: #333;
 }
 .navbar-inverse .navbar-toggle:hover,
-.navbar-inverse . navbar-toggle:focus {
+.navbar-inverse .navbar-toggle:focus {
   background-color: #333;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
@@ -5913,7 +5913,6 @@ button.close {
   border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, .2);
   border-radius: 6px;
-  outline: 0;
   outline: 0;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
           box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
