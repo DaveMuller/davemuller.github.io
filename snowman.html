@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home | Homepage of David Muller</title>
+
+    <link rel="website icon" href="images/icon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Lobster|Open+Sans|Bangers|Candal|Orbitron' rel='stylesheet' type='text/css'>
+    <!--------->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+            <div class="snowman">
+                <script>
+                    var c = document.getElementById("myCanvas");
+                    var ctx = c.getContext("2d");
+
+
+                    <!--Circle Body-->
+                    ctx.beginPath();
+                    ctx.fillStyle = "#fff";
+                    ctx.arc(200, 700, 100, 0, 2 * Math.PI);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    ctx.beginPath();
+                    ctx.arc(200, 565, 75, 0, 2 * Math.PI);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    ctx.beginPath();
+                    ctx.arc(200, 470, 50, 0, 2 * Math.PI);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    <!--Rectangle Hat-->
+                    ctx.beginPath();
+                    ctx.fillStyle = "#000";
+                    ctx.rect(125, 425, 150, 20);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    ctx.beginPath();
+                    ctx.fillStyle = "#000";
+                    ctx.rect(150, 320, 100, 125);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    <!--Circle Body-->
+                    ctx.beginPath();
+                    ctx.arc(190, 470, 5, 0, 2 * Math.PI);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    ctx.beginPath();
+                    ctx.arc(235, 470, 5, 0, 2 * Math.PI);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    <!--Red/Green Present-->
+                    ctx.beginPath();
+                    ctx.fillStyle = "#f00";
+                    ctx.rect(450, 670, 125, 125);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    ctx.beginPath();
+                    ctx.fillStyle = "green";
+                    ctx.rect(500, 665, 25, 130);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    ctx.beginPath();
+                    ctx.rect(440, 670, 145, 25);
+                    ctx.fill();
+                    ctx.stroke();
+                </script>
+            </div>
+		</body>
+
+</html>

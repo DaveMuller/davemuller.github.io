@@ -202,3 +202,10 @@ a:hover,
 a:active {
     color: #999;
 }
+ map {
+	position: absolute;
+	 
+ }
+#buttonMan {
+	position: relative;
+}
